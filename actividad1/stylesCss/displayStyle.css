@@ -1,0 +1,40 @@
+#container{
+    display: flex;
+    align-items: center;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.article{
+    width: 500px;
+    height: 310px;
+    border: solid 1px brown;
+}
+
+.aside{
+    display: flex;
+    text-align: center;
+    border: solid 1px greenyellow;
+    height: 310px;
+    width: 150px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.Menu{
+    background-color: blue;
+    color: aliceblue;
+    font-size: xx-large;
+    margin: 5px;
+}
+
+.imagen{
+    width: 500px;
+    height: 150px;
+}
+p{
+    font-size: small;
+}
