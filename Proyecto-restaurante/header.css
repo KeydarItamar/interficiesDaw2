@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+}
+header {
+    background-color: #110823;
+    font-size: xx-large;
+    height: 5rem;
+    color: antiquewhite;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 0%;
+}
+
+.div-head {
+    border: 1px solid whitesmoke;
+    float: right;
+    width: 7%;
+    align-items: center ;
+    justify-content: center ;
+    text-align: center;
+}
+
+.div-head:hover{
+    background-color: rgb(46, 42, 42);
+    transform:scale(1.1);
+}
+.a-header{
+    padding: 1.5rem   ;
+    display: block;
+    font-size: x-large    ;
+    color: antiquewhite ;
+    text-decoration: none;
+
+}
+.placeholder{
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 0px;
+}

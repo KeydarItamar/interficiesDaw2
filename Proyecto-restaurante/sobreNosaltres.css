@@ -1,0 +1,40 @@
+.H{
+    margin-top: 5%  ;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start ;
+    margin-bottom: 0%;
+}
+h2{
+    font-size: 2.5rem;
+}
+
+.sobre-container{
+    margin-top: 5%   ;
+}
+.imagen-izq{
+    float:left;
+    margin-right: 5% ;
+    margin-bottom: 3% ;
+
+}
+.clear{
+    clear: both;
+}
+.imagen-der{
+    float:right;
+    float: inline-end;
+    margin-left: 5%;
+
+}
+
+.imagen-der :hover{
+    transform: scale(1.8);
+}
+.imagen-izq :hover{
+    transform: scale(1.8);
+}
+p{
+    margin-bottom: 3% ;
+    font-size: 20px;
+}

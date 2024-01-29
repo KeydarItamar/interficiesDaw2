@@ -1,0 +1,27 @@
+footer{
+padding: 1%;
+height: 2%;
+width: 98%;
+display: flex; 
+align-items: center;  
+justify-content: space-between;
+flex-direction: row;
+background-color: black;
+color: antiquewhite;
+
+}
+
+.invisible{
+    height: 100%;
+    width: 50%;
+    border:1px solid black
+}
+.footer-right{
+    font-size:large;
+    margin-right: 5%;
+}
+
+.footer-left{
+    font-size:large;
+    margin-left: 5%; ;
+}
