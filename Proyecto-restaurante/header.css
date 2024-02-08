@@ -16,8 +16,7 @@ header {
 .div-head {
     border: 1px solid whitesmoke;
     float: right;
-    width: 7%;
-    align-items: center ;
+    align-items: center ;   
     justify-content: center ;
     text-align: center;
 }
@@ -40,3 +39,4 @@ header {
     position: fixed;
     top: 0px;
 }
+

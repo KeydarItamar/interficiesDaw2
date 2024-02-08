@@ -38,3 +38,25 @@ p{
     margin-bottom: 3% ;
     font-size: 20px;
 }
+
+@media(max-width: 600px){
+    img{
+        width: 100%;
+        height: 100%;
+    }
+  
+  .imagen-der{
+    width: 100%;
+    margin: 1%;
+  }
+  .imagen-izq{
+    width: 100%;
+    margin: 1%;
+  }
+  .imagen-der :hover{
+    transform: scale(1.0);
+}
+.imagen-izq :hover{
+    transform: scale(1.0);
+}
+}
