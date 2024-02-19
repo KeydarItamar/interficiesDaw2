@@ -1,0 +1,28 @@
+section{
+    display: grid;
+    grid-template-columns: 250px 1fr 2fr 20%;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 20px;
+}   
+.elem{
+    display: flex;
+    justify-content: center;
+}
+.num1,.num5, .num9{
+    grid-column: 1;
+   
+}
+.num2, .num6{
+    grid-column: 2;
+}
+
+.num3, .num7{
+    grid-column: 3;
+}
+.num4, .num8{
+    grid-column: 4;
+}
+
