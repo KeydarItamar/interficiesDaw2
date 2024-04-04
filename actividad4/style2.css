@@ -1,0 +1,80 @@
+section{
+    display: grid;
+    grid-template-columns: 24% 24% 25% 25%;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+}       
+.elem{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num1{
+    grid-column-start: 1;
+    grid-column-end: 3  ;
+}
+.num2{
+    grid-column-start:3;
+    grid-column-end: 5;
+    grid-row-start:1 ;
+    grid-row-end:3 ;
+}
+
+.num3{
+    grid-row: 2 / span 4;
+}
+.num9{
+    grid-column: 1 /span 4;
+}
+
+.num8{
+    grid-column: 2/span 2;
+}
+
+.num7{
+    grid-column: 4;
+    grid-row:  3/ span 2;   
+}
+
+/* .el1{
+    background-color:  red;
+ }
+ 
+ .el2 {
+    background-color: blue;
+ }
+  
+ .el3 {
+    background-color: yellow;
+}
+.el4 {
+   background-color: gray;
+}
+.el5 {
+   background-color: black;
+}  */
+
+/* Colores puestos con paleta de colores */
+
+.el1{
+    background-color:  #FF5E49;
+ }
+ 
+ .el2 {
+    background-color:  #66A4FF;
+ }
+  
+ .el3 {
+    background-color: #DBFF66;
+}
+.el4 {
+   background-color: #737880;
+}
+.el5 {
+   background-color: #421357;
+} 

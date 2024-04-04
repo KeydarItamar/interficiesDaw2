@@ -1,5 +1,6 @@
 
 .carta-container{
+    background-color: white;
     width: 100%;
     display: grid;
     grid-template-columns: 20% 40% 40%;
@@ -17,7 +18,7 @@
     text-align: center ;
     justify-content: center;
     grid-column: 1 / span 4;
-    background-color: rgb(7, 7, 87);
+    background-color: #D47C79;
 }
 .item2{
     font-size: 1.6rem ;
@@ -67,6 +68,7 @@
 
 /* ++++++++++++++++++++++ */
 .carta-container2{
+    background-color: white;
     width: 100%;
     display: grid;
     grid-template-columns: 20% 40% 40%;
