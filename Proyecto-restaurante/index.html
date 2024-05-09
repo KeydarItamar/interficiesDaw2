@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/imagenes/tenedor-y-cuchillo.png" sizes="16x16">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="cabezal.css">
     <link rel="stylesheet" href="sobreNosaltres.css">
     <link rel="stylesheet" href="carta.css">
     <link rel="stylesheet" href="galeria.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="videos.css">
+
     <title>Web Interficies</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 
@@ -32,10 +37,10 @@
         </div>
     </div> 
     <div class="contenido">
-       
-     <div class="H"><h2>Sobre nosaltres</h2></div>
+       <div id="id="slide-click">
+     <div id="slide-click" class="H"><h2>Sobre nosaltres</h2></div>
         <!-- Contenedor sobre nosaltres  ********************** -->
-        <div class="sobre-container">
+        <div id="slide" class="sobre-container">
             <div class="imagen-izq"><img src="/imagenes/restaurante3.png" alt="" ></div>
             <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tempore voluptatem recusandae vel ullam eum molestias repellat iste, suscipit nisi excepturi tempora iusto corrupti quibusdam est aperiam nulla? Labore, numquam.
             At porro, accusamus temporibus blanditiis expedita accusantium illum amet? Impedit praesentium quidem modi! Aut esse voluptatem possimus iure qui id non, necessitatibus distinctio officiis? Doloribus quidem ea quam eos sunt?
@@ -50,6 +55,7 @@
             Mollitia magni veritatis eos necessitatibus sed saepe totam cupiditate sit eaque! Ipsa, aperiam! Molestiae ullam excepturi voluptatum minus unde possimus quis eveniet fugit optio, repellendus, quibusdam obcaecati, ratione mollitia quo!
             Nam quis ducimus omnis ratione, commodi sapiente laboriosam! Quam est amet tempore natus. Reprehenderit eaque qui dolor quisquam, provident minima accusantium officiis. Ad explicabo at rem corporis est fuga. Eos.</p>
         </div>
+    </div>
         <div class="H"><h2>Carta</h2></div>
              <div class="carta-container">
                 <p class="item1">Menú</p>
@@ -88,7 +94,7 @@
                 </div>
           </div>
 
-            <div class="H"> <h2>Galeria de imagenes</h2></div>
+        <div class="H"> <h2>Galeria de imagenes</h2></div>
             <div class="galeria-container">
                 <div class="img-div"><img class="img-galeria" src="imagenes/plato2.jpg" alt=""></div>
                 <div class="img-div"><img class="img-galeria" src="imagenes/plato2.jpg" alt=""></div>
@@ -100,6 +106,22 @@
                 <div class="img-div"><img class="img-galeria" src="imagenes/plato2.jpg" alt=""></div>
             </div>
         </div>
+        <div class="vid">
+        <div class="video-container">
+            <video id="myVideo">
+                <source src="/videos/mp4.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+              </video>
+              <div id="customControls">
+                <!-- <button id="playPauseBtn">Play/Pause</button> -->
+                <!-- <button id="muteBtn">Mute</button> -->
+                <img class="vid-btn" id="playPauseBtn" src="/imagenes/boton-de-play.png">
+                <img class="vid-btn"  id="muteBtn" src="/imagenes/silencio.png">
+                <input type="range" id="volumeRange" min="0" max="1" step="0.1" value="1">
+                <input type="range" id="seekBar" min="0" value="0">
+            </div>
+        </div>
+    </div>
    
     </div>
   </div>
@@ -110,4 +132,54 @@
             <div class="footer-right">Restaurante blah </div>
     </footer>
 </body>
+<script> 
+    $(document).ready(function(){
+      $("#slide-click").click(function(){
+        $("#slide").slideToggle("slow");
+      });
+    });
+    
+
+    var video = document.getElementById("myVideo");
+    var playPauseBtn = document.getElementById("playPauseBtn");
+    var muteBtn = document.getElementById("muteBtn");
+    var volumeRange = document.getElementById("volumeRange");
+    var seekBar = document.getElementById("seekBar");
+
+playPauseBtn.addEventListener("click", function() {
+    if (video.paused) {
+        video.play();
+        playPauseBtn.textContent = "Pause";
+    } else {
+        video.pause();
+        playPauseBtn.textContent = "Play";
+    }
+});
+
+muteBtn.addEventListener("click", function() {
+    if (video.muted) {
+        video.muted = false;
+        muteBtn.textContent = "Mute";
+    } else {
+        video.muted = true;
+        muteBtn.textContent = "Unmute";
+    }
+});
+
+volumeRange.addEventListener("input", function() {
+    video.volume = volumeRange.value;
+});
+
+seekBar.addEventListener("input", function() {
+    var seekTo = video.duration * (seekBar.value / 100);
+    video.currentTime = seekTo;
+});
+
+video.addEventListener("timeupdate", function() {
+    var currentTime = video.currentTime;
+    var duration = video.duration;
+    var seekBarValue = (currentTime / duration) * 100;
+    seekBar.value = seekBarValue;
+});
+    </script>
 </html>

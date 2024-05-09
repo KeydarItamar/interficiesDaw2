@@ -211,6 +211,7 @@ ul li:nth-of-type(4):hover {
     width: 100%; 
 }
   .img-4{
+   height: 100%;
     width: 100%; 
 }
   #item-1{
@@ -222,6 +223,7 @@ ul li:nth-of-type(4):hover {
   }
   #item-2{
     order: 3;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -229,6 +231,7 @@ ul li:nth-of-type(4):hover {
   }
   #item-3{
     order: 4;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -236,6 +239,7 @@ ul li:nth-of-type(4):hover {
   }
   #item-4{
     order: 5;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;

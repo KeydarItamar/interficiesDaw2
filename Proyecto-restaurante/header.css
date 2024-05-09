@@ -4,6 +4,8 @@
     font-size: 15px;
 }
 header {
+    z-index: 9999;
+
     background-color: #D47C79;
     font-size: xx-large;
     height: 5rem;
@@ -14,6 +16,8 @@ header {
 }
 
 .div-head {
+    z-index: 9999;
+
     border: 1px solid whitesmoke;
     float: right;
     align-items: center ;   

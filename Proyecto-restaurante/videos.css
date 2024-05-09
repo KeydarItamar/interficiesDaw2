@@ -1,0 +1,65 @@
+/* 
+video{
+    width: 55%;
+}
+
+.video-container {
+    width:calc(100% - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 3;
+}
+
+    
+#customControls {
+    position: absolute;
+    bottom:50px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+#customControls button, #customControls input {
+    margin: 0 5px;
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;
+}
+.vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 4rem);
+    margin-bottom: 4rem;
+}
+#customControls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(149, 13, 56, 0.642);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#customControls button, #customControls input {
+    margin: 0 5px;
+}
+
+.vid-btn{
+    margin: 10px
+}
